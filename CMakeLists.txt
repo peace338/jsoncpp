@@ -45,7 +45,7 @@ endforeach()
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
+message(STATUS "my jsoncpp CMAKE_CXX_FLAGS:${CMAKE_CXX_FLAGS}")
 # Ensure that CMAKE_BUILD_TYPE has a value specified for single configuration generators.
 if(NOT DEFINED CMAKE_BUILD_TYPE AND NOT DEFINED CMAKE_CONFIGURATION_TYPES)
     set(CMAKE_BUILD_TYPE Release CACHE STRING
