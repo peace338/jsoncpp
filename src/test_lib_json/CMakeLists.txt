@@ -8,6 +8,7 @@ add_executable(jsoncpp_test
     main.cpp
 )
 
+message("test_lib_json CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
 
 if(BUILD_SHARED_LIBS)
     if(CMAKE_VERSION VERSION_GREATER_EQUAL 3.12.0)

@@ -2,6 +2,7 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_G
     #-Werror=* was introduced -after- GCC 4.1.2
     add_compile_options("-Werror=strict-aliasing")
 endif()
+message("lib_json CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
 
 include(CheckIncludeFileCXX)
 include(CheckTypeSize)
