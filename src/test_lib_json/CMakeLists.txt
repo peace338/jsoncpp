@@ -8,7 +8,7 @@ add_executable(jsoncpp_test
     main.cpp
 )
 
-message("test_lib_json CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
+message(STATUS "test_lib_json CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
 
 if(BUILD_SHARED_LIBS)
     if(CMAKE_VERSION VERSION_GREATER_EQUAL 3.12.0)
@@ -38,3 +38,5 @@ if(JSONCPP_WITH_POST_BUILD_UNITTEST)
         COMMAND ${CMAKE_CROSSCOMPILING_EMULATOR} $<TARGET_FILE:jsoncpp_test>
     )
 endif()
+
+message(STATUS "test_lib_json2 CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
